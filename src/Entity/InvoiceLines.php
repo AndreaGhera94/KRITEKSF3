@@ -17,7 +17,7 @@ class InvoiceLines
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\invoice", inversedBy="invoiceLines")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Invoice", inversedBy="invoiceLines")
      */
     private $Invoice;
 
