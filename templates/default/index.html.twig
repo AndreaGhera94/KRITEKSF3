@@ -10,12 +10,16 @@
 {% endblock %}
 
 {% block body %}
-    {{ form_start(form,{ 'attr': {'id': 'invoice_lines_form'} }) }}
-        {{ form_widget(form) }}
-    {{ form_end(form) }}
+    <center>
+        <b>Insert new invoice</b>
+        {{ form_start(form,{ 'attr': {'id': 'invoice_lines_form'} }) }}
+            {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </center>
 {% endblock %}
 
 {% block javascripts %}
     <script>
+        document.getElementById('invoice_lines_date').type = 'date';
     </script>
 {% endblock %}
