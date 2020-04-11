@@ -8,6 +8,13 @@
 !app/logs/.gitkeep
 /app/phpunit.xml
 /build/
-/vendor/
 /bin/
 /composer.phar
+
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles
+/var/
+/vendor/
+/config/packages/dev/swiftmailer.yaml
